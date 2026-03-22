@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: ubuntu;
+	transition: all 0.1s linear;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+}
+
+.left {
+	flex: 1;
+	background:
+		linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+		url("../Img/Washing-Machine.jpg") no-repeat center center/cover;
+}
+
+.right {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ebf2ff;
+}
+
+.form-box {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 65%;
+	border-radius: 15px;
+	padding: 30px;
+}
+
+.form-box h1 {
+	font-size: 32px;
+	color: #1f2937;
+}
+
+.form-box p {
+	color: #6b7280;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.input-group label {
+	font-size: 15px;
+	color: #374151;
+}
+
+.input-group input {
+	padding: 20px;
+	border: none;
+	border-radius: 10px;
+	background-color: #e5e7eb;
+	outline: none;
+	font-size: 15px;
+}
+
+.input-group input::placeholder {
+	font-size: 15px;
+	color: #9ca3af;
+}
+
+.input-group input:hover {
+	box-shadow: 0 0 0 2px rgba(30, 155, 215, 0.2);
+}
+
+.input-group input:focus {
+	background-color: #ffffff;
+	box-shadow: 0 0 0 2px #1e9bd7;
+}
+
+.forgot {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.forgot a {
+	font-size: 14px;
+	text-decoration: none;
+	color: #374151;
+}
+
+.forgot a:hover {
+	color: #2563eb;
+	text-decoration: underline;
+}
+
+.btn {
+	padding: 15px;
+	border: none;
+	border-radius: 10px;
+	background: linear-gradient(to right, #1e9bd7, #2563eb);
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+}
+
+.btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 15px 30px rgba(37, 99, 235, 0.4);
+}
+
+.btn:active {
+	transform: scale(0.98);
+}
+
+.register {
+	text-align: center;
+	font-size: 14px;
+}
+
+.register a {
+	color: #2563eb;
+	text-decoration: none;
+}
+
+.register a:hover {
+	text-decoration: underline;
+}
