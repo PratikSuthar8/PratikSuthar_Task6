@@ -4,7 +4,6 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: ubuntu;
-	transition: all 0.1s linear;
 }
 
 .container {
@@ -14,9 +13,14 @@
 
 .left {
 	flex: 1;
-	background:
-		linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-		url("../Img/Washing-Machine.jpg") no-repeat center center/cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e6f2ff;
+}
+
+.left img {
+	width: 100%;
 }
 
 .right {
@@ -24,107 +28,79 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #ebf2ff;
+	background-color: #f5f5f5;
 }
 
 .form-box {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
-	width: 65%;
-	border-radius: 15px;
-	padding: 30px;
+	gap: 15px;
+	width: 50%;
 }
 
-.form-box h1 {
-	font-size: 32px;
-	color: #1f2937;
-}
+/* .form-box h1 {
+	font-size: 28px;
+} */
 
 .form-box p {
-	color: #6b7280;
+	font-size: 20px;
+	color: gray;
 }
 
 .input-group {
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
+	gap: 5px;
 }
 
 .input-group label {
 	font-size: 15px;
-	color: #374151;
+	color: gray;
 }
 
 .input-group input {
-	padding: 20px;
-	border: none;
+	padding: 10px;
 	border-radius: 10px;
-	background-color: #e5e7eb;
-	outline: none;
-	font-size: 15px;
+	height: 60px;
+	border: 1px solid #ccc;
 }
-
 .input-group input::placeholder {
-	font-size: 15px;
-	color: #9ca3af;
-}
-
-.input-group input:hover {
-	box-shadow: 0 0 0 2px rgba(30, 155, 215, 0.2);
-}
-
-.input-group input:focus {
-	background-color: #ffffff;
-	box-shadow: 0 0 0 2px #1e9bd7;
+	font-size: larger;
 }
 
 .forgot {
 	display: flex;
 	justify-content: flex-end;
 }
-
-.forgot a {
-	font-size: 14px;
-	text-decoration: none;
-	color: #374151;
-}
-
 .forgot a:hover {
-	color: #2563eb;
 	text-decoration: underline;
 }
 
+.forgot a {
+	font-size: 15px;
+	text-decoration: none;
+	color: black;
+}
+
 .btn {
-	padding: 15px;
-	border: none;
+	height: 40px;
+	font-size: 20px;
 	border-radius: 10px;
-	background: linear-gradient(to right, #1e9bd7, #2563eb);
+	border: none;
+	background-color: #007bff;
 	color: white;
-	font-size: 16px;
 	cursor: pointer;
-	box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
-}
-
-.btn:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 15px 30px rgba(37, 99, 235, 0.4);
-}
-
-.btn:active {
-	transform: scale(0.98);
 }
 
 .register {
 	text-align: center;
-	font-size: 14px;
+	font-size: 15px;
 }
 
 .register a {
-	color: #2563eb;
+	color: blue;
 	text-decoration: none;
 }
-
 .register a:hover {
 	text-decoration: underline;
 }
